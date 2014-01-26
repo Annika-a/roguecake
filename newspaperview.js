@@ -70,8 +70,13 @@ NewspaperView.prototype.addElements = function() {
     this.article.id = 'article';
     newspaperDiv.appendChild(this.article);
 
-     this.newsimg = document.createElement("img");
+
+
+    this.newsimg = document.createElement("img");
     this.newsimg.id = 'newsimg';
-    this.newsimg.src ="Assets/lion.png";
+    this.newsimg.src ="Assets/"+Newsimg[ Math.floor(Math.random()*6 + 0) ]+".png";
     newspaperDiv.appendChild(this.newsimg);
 };
+
+
+var Newsimg = [ "bones", "Down", "joy","lion", "rip", "up" ];

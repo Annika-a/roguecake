@@ -32,8 +32,8 @@ margin:0;
 	left:200px;
 	top:50px;
 	width:520px;
-	height:335px;
-	padding:120px 20px 50px 60px;
+	height:325px;
+	padding:130px 20px 50px 60px;
 
 	-webkit-animation:spin 0.4s linear 0s;
     -moz-animation:spin 0.4s linear 0s;
@@ -102,7 +102,8 @@ height:540px;
 #newspaper h1 {
 font-family: 'Abril Fatface', cursive;
 font-size: 1em;
-margin:;
+margin:-5px 5px 5px 5px;
+overflow: hidden;
 }
 
 
@@ -174,11 +175,11 @@ background-image:url('Assets/globe.png');
 
 
 #newsimg {
-position: absolute;
-top:145px;
+position:absolute;
+bottom:55px;
 right:55px;
-width:120px;
-height:120px;
+width:150px;
+height:150px;
 border:2px solid #333;
 }
 

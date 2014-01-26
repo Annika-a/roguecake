@@ -646,11 +646,12 @@ Cake.prototype.drawList = function(ctx, centerX, topY, mainColor, edgeColor, spa
 };
 
 // Text can be undefined
-var Article = function(priority, country, headline, text) {
+var Article = function(priority, country, headline, text, newsimg) {
     this.headline = headline;
     this.text = text;
     this.priority = priority;
     this.country = country;
+    this.newsimg = newsimg;
 };
 
 var GameState = function() {
@@ -658,7 +659,7 @@ var GameState = function() {
     this.cakes = [];
     // List of Articles, filled in by TargetingView, cleared by NewspaperView
     this.news = [
-        new Article(10, "", "Food waste illegalized", "From this day onwards, neither consumers nor food manufacturers are allowed to throw away edible things. Anything passable as human nutrition needs to be distributed and eaten. Analysts expect this to be extremely detrimental to innovation in the gastronomic industries."),
+        new Article(10, "", "Food waste illegalized", "From this day onwards, neither consumers nor food manufacturers are allowed to throw away edible things. Anything passable as human nutrition needs to be distributed and eaten. Analysts expect this to be extremely detrimental to innovation in the gastronomic industries.",""),
         new Article(1, "", "Demand of cakes increasing worldwide"),
     ];
     // List of strings, filled in by TargetingView based on filled conditions.
